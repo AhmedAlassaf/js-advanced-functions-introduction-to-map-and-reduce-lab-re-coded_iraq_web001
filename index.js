@@ -38,5 +38,8 @@ function reduceToAllTrue(source){
   return true
 }
 function reduceToAnyTrue(source){
-  
+  for(let i=0; i<source.length; i++){
+    if(source[i]) return true
+  }
+  return false
 }
